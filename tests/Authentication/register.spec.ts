@@ -1,14 +1,17 @@
 import { test } from '@playwright/test';
 import { HomePage } from '../../pages/homePage';
 import { SignupAndLoginPage } from '../../pages/singupAndLoginPage';
+import { AccountStatus } from '../../pages/accountstatus';
 
 let homePage: HomePage
 let signupAndLoginPage: SignupAndLoginPage
+let accountStatus: AccountStatus
 
 test.beforeEach(async ({ page }, testInfo) => {
   console.log(`Running ${testInfo.title}`)
   homePage = new HomePage(page)
   signupAndLoginPage = new SignupAndLoginPage(page)
+  accountStatus = new AccountStatus(page)
   await homePage.navigateToHomePage()
   await homePage.checkThatHomePageBannerIsLoaded()
 })
@@ -26,6 +29,10 @@ test.describe("Register", () => {
     await signupAndLoginPage.enterSignupNameAndEmail()
     await signupAndLoginPage.checkThatNameAndEmailAddressAreCorrect()
     await signupAndLoginPage.clickOnSignUpButton()
+    await signupAndLoginPage.enterAccountInformationData()
+    await signupAndLoginPage.clickOnCreateAccountButton()
+    await accountStatus.checkThatTheAccountCreatedIsVisbleCorrectly()
+
   })
 
 })
