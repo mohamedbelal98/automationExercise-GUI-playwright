@@ -24,6 +24,7 @@ test.afterEach(async ({ }, testInfo) => {
 test.describe("Register", () => {
 
   test("Register User", async () => {
+
     await homePage.navigateToSignupAndLoginPage()
     await signupAndLoginPage.checkThatSignupAndLoginPageIsLoaded()
     await signupAndLoginPage.enterSignupNameAndEmail()
@@ -32,6 +33,16 @@ test.describe("Register", () => {
     await signupAndLoginPage.enterAccountInformationData()
     await signupAndLoginPage.clickOnCreateAccountButton()
     await accountStatus.checkThatTheAccountCreatedIsVisbleCorrectly()
+
+  })
+
+  test("Register User with existing email", async () => {
+    
+    await homePage.navigateToSignupAndLoginPage()
+    await signupAndLoginPage.checkThatSignupAndLoginPageIsLoaded()
+    await signupAndLoginPage.enterSignupNameAndEmailAlreadyExist()
+    await signupAndLoginPage.clickOnSignUpButton()
+    await signupAndLoginPage.checkThatEmailAddressAlreadyExistDisplayCorrectly()
 
   })
 

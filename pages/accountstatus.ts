@@ -21,8 +21,7 @@ export class AccountStatus {
     async checkThatTheAccountCreatedIsVisbleCorrectly() {
 
         await expect(this.accountCreatedMessage).toBeVisible()
-
-        await expect(await this.accountCreatedMessageText.textContent()).toEqual(this.accountCreatedText)    
+        expect(await this.accountCreatedMessageText.textContent()).toEqual(this.accountCreatedText)    
     }
 
 }

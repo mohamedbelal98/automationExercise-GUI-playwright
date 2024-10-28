@@ -1,6 +1,6 @@
 import { expect, Locator, type Page } from "@playwright/test";
 
-    export class SignupAndLoginPage {
+export class SignupAndLoginPage {
 
     readonly page: Page
     readonly randomNumber: string
@@ -8,6 +8,8 @@ import { expect, Locator, type Page } from "@playwright/test";
     readonly signupTextInput: string
     readonly newUserSignupTextValue: string
     readonly loginToYourAccountTextValue: string
+    readonly emailAdressAlreadyExistInput: string
+    readonly emailAdressAlreadyExistContent: string
 
     readonly newUserSignupText: Locator
     readonly loginToYourAccountText: Locator
@@ -32,6 +34,7 @@ import { expect, Locator, type Page } from "@playwright/test";
     readonly zipCodeTextBox: Locator
     readonly mobileNumberTextBox: Locator
     readonly createAccountButton: Locator
+    readonly emailAddressAlreadyExistText: Locator
 
     constructor(page: Page) {
         this.page = page
@@ -59,11 +62,14 @@ import { expect, Locator, type Page } from "@playwright/test";
         this.zipCodeTextBox = this.page.locator("#zipcode")
         this.mobileNumberTextBox = this.page.locator("#mobile_number")
         this.createAccountButton = this.page.locator("[data-qa='create-account']")
+        this.emailAddressAlreadyExistText = this.page.getByText("Email Address already exist!")
 
         this.newUserSignupTextValue = "New User Signup!"
         this.loginToYourAccountTextValue = "Login to your account"
         this.nameTextInput = "Mohamed Belal"
         this.signupTextInput = "mohamed" + this.randomNumber + "@gmail.com"
+        this.emailAdressAlreadyExistInput = "mohamed.belal@gmail.com"
+        this.emailAdressAlreadyExistContent = "Email Address already exist!"
     }
 
     /************************* Actions *************************/
@@ -73,10 +79,15 @@ import { expect, Locator, type Page } from "@playwright/test";
         await this.signupEmailAddressTextBox.nth(1).fill(this.signupTextInput)
     }
 
+    async enterSignupNameAndEmailAlreadyExist() {
+        await this.nameTextBox.fill(this.nameTextInput)
+        await this.signupEmailAddressTextBox.nth(1).fill(this.emailAdressAlreadyExistInput)
+    }
+
     async clickOnSignUpButton() {
         await this.signupButton.click()
     }
-    
+
     async enterAccountInformationData() {
 
         await this.mrRadioButton.click()
@@ -120,6 +131,12 @@ import { expect, Locator, type Page } from "@playwright/test";
 
         expect(nameTextBoxValue).toEqual(this.nameTextInput)
         expect(signupEmailAddressTextBoxValue).toEqual(this.signupTextInput)
+    }
+
+    async checkThatEmailAddressAlreadyExistDisplayCorrectly() {
+
+        await expect(this.emailAddressAlreadyExistText).toBeVisible()
+        expect(await this.emailAddressAlreadyExistText.textContent()).toEqual(this.emailAdressAlreadyExistContent)
     }
 
 }
