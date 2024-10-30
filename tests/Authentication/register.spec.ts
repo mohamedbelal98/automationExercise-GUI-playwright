@@ -21,7 +21,7 @@ test.afterEach(async ({ }, testInfo) => {
   await homePage.tearDown()
 })
 
-test.describe("Register", () => {
+test.describe("Register Test cases", () => {
 
   test("Register User", async () => {
 
@@ -37,7 +37,7 @@ test.describe("Register", () => {
   })
 
   test("Register User with existing email", async () => {
-    
+
     await homePage.navigateToSignupAndLoginPage()
     await signupAndLoginPage.checkThatSignupAndLoginPageIsLoaded()
     await signupAndLoginPage.enterSignupNameAndEmailAlreadyExist()

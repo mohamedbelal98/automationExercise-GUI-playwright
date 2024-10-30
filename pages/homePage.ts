@@ -5,11 +5,15 @@ export class HomePage {
     readonly page: Page
     readonly homePageBanner: Locator
     readonly signupAndLoginButton: Locator
+    readonly logoutButton: Locator
+    readonly loggedinUser: Locator
 
     constructor(page: Page) {
         this.page = page
         this.homePageBanner = this.page.locator("[alt='Website for automation practice']")
         this.signupAndLoginButton = this.page.getByText(" Signup / Login")
+        this.logoutButton = this.page.getByText(" Logout")
+        this.loggedinUser = this.page.getByText(" Logged in as ")
     }
 
 
@@ -33,9 +37,21 @@ export class HomePage {
         await this.signupAndLoginButton.click()
     }
 
+    async clickonLogoutbutton() {
+        await this.logoutButton.click()
+    }
+
     /************************* Asserations *************************/
     async checkThatHomePageBannerIsLoaded() {
         await expect(this.homePageBanner).toBeVisible()
+    }
+
+    async checkUserIsLoggedInCorrectly() {
+        await expect(this.loggedinUser).toBeVisible()
+    }
+
+    async checkUserIsNOTLoggedIn() {
+        await expect(this.loggedinUser).not.toBeVisible()
     }
 
 }
