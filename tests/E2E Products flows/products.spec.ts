@@ -30,4 +30,12 @@ test.describe("Products test cases", async () => {
         await products.clickOnFirstProductItem()
         await singleProductPage.checkThatProductDetailsDisplayedCorrectly()
     })
+
+    test("Search Product", async () => {
+
+        await homePage.navigateToProductsPage()
+        await products.checkThatAllProductsTextDisplayedCorrectly()
+        await products.searchForProducts("Women")
+        await products.checkThatAllProductsAfterSearchRelatedToSearchKey("Women")
+    })
 })
