@@ -8,6 +8,7 @@ export class HomePage {
     readonly logoutButton: Locator
     readonly loggedinUser: Locator
     readonly contactUsButton: Locator
+    readonly productsButton: Locator
 
     constructor(page: Page) {
         this.page = page
@@ -16,6 +17,7 @@ export class HomePage {
         this.logoutButton = this.page.getByText(" Logout")
         this.loggedinUser = this.page.getByText(" Logged in as ")
         this.contactUsButton = this.page.getByText(" Contact us")
+        this.productsButton = this.page.getByText(" Products")
     }
 
 
@@ -45,6 +47,10 @@ export class HomePage {
 
     async clickOnContactUsButton() {
         await this.contactUsButton.click()
+    }
+
+    async navigateToProductsPage() {
+        await this.productsButton.click()
     }
 
     /************************* Asserations *************************/
