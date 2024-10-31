@@ -7,6 +7,7 @@ export class HomePage {
     readonly signupAndLoginButton: Locator
     readonly logoutButton: Locator
     readonly loggedinUser: Locator
+    readonly contactUsButton: Locator
 
     constructor(page: Page) {
         this.page = page
@@ -14,6 +15,7 @@ export class HomePage {
         this.signupAndLoginButton = this.page.getByText(" Signup / Login")
         this.logoutButton = this.page.getByText(" Logout")
         this.loggedinUser = this.page.getByText(" Logged in as ")
+        this.contactUsButton = this.page.getByText(" Contact us")
     }
 
 
@@ -41,7 +43,12 @@ export class HomePage {
         await this.logoutButton.click()
     }
 
+    async clickOnContactUsButton() {
+        await this.contactUsButton.click()
+    }
+
     /************************* Asserations *************************/
+    
     async checkThatHomePageBannerIsLoaded() {
         await expect(this.homePageBanner).toBeVisible()
     }
