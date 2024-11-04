@@ -9,6 +9,8 @@ export class HomePage {
     readonly loggedinUser: Locator
     readonly contactUsButton: Locator
     readonly productsButton: Locator
+    readonly cartButton: Locator
+
 
     constructor(page: Page) {
         this.page = page
@@ -18,6 +20,8 @@ export class HomePage {
         this.loggedinUser = this.page.getByText(" Logged in as ")
         this.contactUsButton = this.page.getByText(" Contact us")
         this.productsButton = this.page.getByText(" Products")
+        this.cartButton = this.page.getByRole('link', { name: ' Cart' })
+
     }
 
 
@@ -53,8 +57,12 @@ export class HomePage {
         await this.productsButton.click()
     }
 
+    async navigateToCartPage() {
+        await this.cartButton.click()
+    }
+
     /************************* Asserations *************************/
-    
+
     async checkThatHomePageBannerIsLoaded() {
         await expect(this.homePageBanner).toBeVisible()
     }
