@@ -2,6 +2,7 @@ import { test } from '@playwright/test';
 import { HomePage } from '../../pages/homePage';
 import { SignupAndLoginPage } from '../../pages/singupAndLoginPage';
 import { AccountStatus } from '../../pages/accountstatus';
+import { CommanMethod } from '../../pages/commanMethod';
 
 let homePage: HomePage
 let signupAndLoginPage: SignupAndLoginPage
@@ -23,7 +24,7 @@ test.afterEach(async ({ }, testInfo) => {
 
 test.describe("Register Test cases", () => {
 
-  test("Register User", async () => {
+  test("Register User", async ({page}, testInfo) => {
 
     await homePage.navigateToSignupAndLoginPage()
     await signupAndLoginPage.checkThatSignupAndLoginPageIsLoaded()
@@ -33,17 +34,17 @@ test.describe("Register Test cases", () => {
     await signupAndLoginPage.enterAccountInformationData()
     await signupAndLoginPage.clickOnCreateAccountButton()
     await accountStatus.checkThatTheAccountCreatedIsVisbleCorrectly()
-
+    await new CommanMethod(page).takeScreenShot(testInfo.title)
   })
 
-  test("Register User with existing email", async () => {
+  test("Register User with existing email", async ({page}, testInfo) => {
 
     await homePage.navigateToSignupAndLoginPage()
     await signupAndLoginPage.checkThatSignupAndLoginPageIsLoaded()
     await signupAndLoginPage.enterSignupNameAndEmailAlreadyExist()
     await signupAndLoginPage.clickOnSignUpButton()
     await signupAndLoginPage.checkThatEmailAddressAlreadyExistDisplayCorrectly()
-
+    await new CommanMethod(page).takeScreenShot(testInfo.title)
   })
 
 })

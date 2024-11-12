@@ -28,7 +28,6 @@ test.describe("Login Test Cases", async () => {
         await signupAndLoginPage.checkThatEmailAdressAndPasswordAreCorrect()
         await signupAndLoginPage.clickOnLoginButton()
         await homePage.checkUserIsLoggedInCorrectly()
-
     })
 
     test("Login User with incorrect email and password", async () => {
@@ -38,7 +37,6 @@ test.describe("Login Test Cases", async () => {
         await signupAndLoginPage.enterLogincredentialsWithIncorrectData()
         await signupAndLoginPage.clickOnLoginButton()
         await signupAndLoginPage.checkThatEmailOrPasswordIsIncorrectIsDisplayedCorrectly()
-
     })
 
 })

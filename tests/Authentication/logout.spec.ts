@@ -31,6 +31,5 @@ test.describe("Logout Test Cases", async () => {
         await homePage.checkUserIsLoggedInCorrectly()
         await homePage.clickonLogoutbutton()
         await homePage.checkUserIsNOTLoggedIn()
-
     })
 })

@@ -3,6 +3,8 @@ import { expect, Locator, type Page } from "@playwright/test";
 export class CommanMethod {
 
     readonly page: Page
+    readonly randomNumber: string
+
     readonly footerWidgetLocator: Locator
     readonly subscriptionEmaillAddress: Locator
     readonly emailAddressArrow: Locator
@@ -11,6 +13,8 @@ export class CommanMethod {
 
     constructor(page: Page) {
         this.page = page
+        this.randomNumber = Date.now().toString()
+
         this.footerWidgetLocator = this.page.locator('footer')
         this.subscriptionEmaillAddress = this.page.getByPlaceholder('Your email address')
         this.emailAddressArrow = this.page.locator('#subscribe')
@@ -30,6 +34,10 @@ export class CommanMethod {
         await this.emailAddressArrow.click()
     }
 
+    async takeScreenShot(testName: string) {
+        await this.page.screenshot({path: `screenshots/${testName}${this.randomNumber}.png`})
+    }
+
     /************************* Asserations *************************/
 
     async verifySubscription() {
@@ -37,6 +45,7 @@ export class CommanMethod {
         await expect(this.subscriptionTextLocator).toBeVisible()
         expect(await this.subscriptionTextLocator.textContent()).toEqual("Subscription")
     }
+
     async verfiySuccessMessageForSubscription() {
         await expect(this.successAlert).toBeVisible()
     }

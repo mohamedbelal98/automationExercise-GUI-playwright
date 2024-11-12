@@ -34,7 +34,7 @@ export class HomePage {
             route.continue({ url: secureUrl });
         });
 
-        await this.page.goto("https://automationexercise.com/")
+        await this.page.goto("/")
     }
 
     async tearDown() {
