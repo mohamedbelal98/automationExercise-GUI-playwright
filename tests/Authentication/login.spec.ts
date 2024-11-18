@@ -20,7 +20,7 @@ test.afterEach(async ({ page }, testInfo) => {
 
 test.describe("Login Test Cases", async () => {
 
-    test("Login User with correct email and password", async () => {
+    test("Login User with correct email and password", { tag: ["@Regression", "@Auth"] }, async () => {
 
         await homePage.navigateToSignupAndLoginPage()
         await signupAndLoginPage.checkThatSignupAndLoginPageIsLoaded()
@@ -30,7 +30,7 @@ test.describe("Login Test Cases", async () => {
         await homePage.checkUserIsLoggedInCorrectly()
     })
 
-    test("Login User with incorrect email and password", async () => {
+    test("Login User with incorrect email and password", { tag: ["@Auth"] }, async () => {
 
         await homePage.navigateToSignupAndLoginPage()
         await signupAndLoginPage.checkThatSignupAndLoginPageIsLoaded()

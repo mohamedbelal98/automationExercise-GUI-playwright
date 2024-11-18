@@ -20,7 +20,7 @@ test.afterEach(async ({ }, testInfo) => {
 
 test.describe("Subscription Test cases", async () => {
 
-    test("Verify Subscription in home page", async () => {
+    test("Verify Subscription in home page", { tag: ["@FullJourney"] }, async () => {
 
         await commanMethod.scrollDownToFooter()
         await commanMethod.verifySubscription()
@@ -28,7 +28,7 @@ test.describe("Subscription Test cases", async () => {
         await commanMethod.verfiySuccessMessageForSubscription()
     })
 
-    test("Verify Subscription in Cart page", async () => {
+    test("Verify Subscription in Cart page", { tag: ["@FullJourney"] }, async () => {
 
         await homePage.navigateToCartPage()
         await commanMethod.scrollDownToFooter()

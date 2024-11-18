@@ -24,7 +24,7 @@ test.afterEach(async ({ }, testInfo) => {
 
 test.describe("Register Test cases", () => {
 
-  test("Register User", async ({page}, testInfo) => {
+  test("Register User", { tag: ["@Auth", "@Regression"] }, async ({ page }, testInfo) => {
 
     await homePage.navigateToSignupAndLoginPage()
     await signupAndLoginPage.checkThatSignupAndLoginPageIsLoaded()
@@ -37,7 +37,7 @@ test.describe("Register Test cases", () => {
     await new CommanMethod(page).takeScreenShot(testInfo.title)
   })
 
-  test("Register User with existing email", async ({page}, testInfo) => {
+  test("Register User with existing email", { tag: ["@Auth"] }, async ({ page }, testInfo) => {
 
     await homePage.navigateToSignupAndLoginPage()
     await signupAndLoginPage.checkThatSignupAndLoginPageIsLoaded()

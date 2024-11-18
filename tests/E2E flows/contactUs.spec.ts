@@ -20,7 +20,7 @@ test.afterEach(async ({ page }, testInfo) => {
 
 test.describe("Contact Us test cases", async () => {
 
-    test("Contact Us Form", async () => {
+    test("Contact Us Form", { tag: ["@FullJourney"] }, async () => {
 
         await homePage.clickOnContactUsButton()
         await contactUs.checkThatContactUsPageIsLoaded()

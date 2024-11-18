@@ -23,7 +23,7 @@ test.afterEach(async ({ page }, testInfo) => {
 
 test.describe("Products test cases", async () => {
 
-    test("Verify All Products and product detail page", async () => {
+    test("Verify All Products and product detail page", { tag: ["@FullJourney"] }, async () => {
 
         await homePage.navigateToProductsPage()
         await products.checkThatAllProductsTextDisplayedCorrectly()
@@ -31,7 +31,7 @@ test.describe("Products test cases", async () => {
         await singleProductPage.checkThatProductDetailsDisplayedCorrectly()
     })
 
-    test("Search Product", async () => {
+    test("Search Product", { tag: ["@FullJourney"] }, async () => {
 
         await homePage.navigateToProductsPage()
         await products.checkThatAllProductsTextDisplayedCorrectly()

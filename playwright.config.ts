@@ -1,20 +1,11 @@
 import { defineConfig, devices } from '@playwright/test';
 import * as dotenv from 'dotenv';
-import path from 'path';
-
-/**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
 
 const envFile = `.env.${process.env.ENV}`
-dotenv.config({path: envFile})
+dotenv.config({ path: envFile })
 
 // require('dotenv').config()
 
-/**
- * See https://playwright.dev/docs/test-configuration.
- */
 export default defineConfig({
   testDir: './tests',
   /* Run tests in files in parallel */
@@ -33,7 +24,9 @@ export default defineConfig({
     baseURL: process.env.BASEURL,
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
-    video: 'on'
+    video: {
+      mode: 'retain-on-failure'
+    }
   },
 
   /* Configure projects for major browsers */

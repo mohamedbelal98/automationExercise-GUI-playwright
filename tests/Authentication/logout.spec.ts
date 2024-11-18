@@ -21,7 +21,7 @@ test.afterEach(async ({ page }, testInfo) => {
 test.describe("Logout Test Cases", async () => {
 
 
-    test("Logout User", async () => {
+    test("Logout User", { tag: ["@Auth", "@Regression"] }, async () => {
 
         await homePage.navigateToSignupAndLoginPage()
         await signupAndLoginPage.checkThatSignupAndLoginPageIsLoaded()

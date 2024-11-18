@@ -6,8 +6,8 @@
       "ui-mode": "npx playwright test --ui",
       "report": "npx playwright show-report",
       "register-testcases": "npx playwright test register.spec.ts --project=chromium",
-      "e2eDev": "powershell -Command \"$env:ENV='dev'; npx playwright test --project='chromium'\"",
-      "e2eProd": "powershell -Command \"$env:ENV='prod'; npx playwright test --project='chromium'\""
+      "e2eDev": "powershell -Command \"$env:ENV='dev'; npx playwright test --project='chromium' $args\"",
+      "e2eProd": "powershell -Command \"$env:ENV='prod'; npx playwright test --project='chromium' $args\""
     },
     "keywords": [],
     "author": "",
