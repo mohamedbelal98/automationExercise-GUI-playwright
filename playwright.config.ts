@@ -7,7 +7,10 @@ import path from 'path';
  * https://github.com/motdotla/dotenv
  */
 
-require('dotenv').config()
+const envFile = `.env.${process.env.ENV}`
+dotenv.config({path: envFile})
+
+// require('dotenv').config()
 
 /**
  * See https://playwright.dev/docs/test-configuration.
