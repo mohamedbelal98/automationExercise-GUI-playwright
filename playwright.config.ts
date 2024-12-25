@@ -1,8 +1,8 @@
 import { defineConfig, devices } from '@playwright/test';
 import * as dotenv from 'dotenv';
 
-const envFile = `.env.${process.env.ENV}`
-dotenv.config({ path: envFile })
+const envFile = `.env.${process.env.ENV}`;
+dotenv.config({ path: envFile });
 
 // require('dotenv').config()
 
@@ -25,8 +25,8 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
     video: {
-      mode: 'retain-on-failure'
-    }
+      mode: 'retain-on-failure',
+    },
   },
 
   /* Configure projects for major browsers */
