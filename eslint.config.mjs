@@ -14,7 +14,10 @@ const compat = new FlatCompat({
 });
 
 console.log('_dirname:', _dirname);
-console.log('Expected tsconfig.json path:', path.resolve(_dirname, './tsconfig.json'));
+console.log(
+  'Expected tsconfig.json path:',
+  path.resolve(_dirname, './tsconfig.json')
+);
 
 export default [
   {
@@ -22,8 +25,8 @@ export default [
       globals: { ...globals.browser, ...globals.node },
       parserOptions: {
         project: path.resolve(_dirname, 'tsconfig.json'), // Absolute path to tsconfig.json
-        tsconfigRootDir: _dirname,                       // Root directory of tsconfig.json
-      },      
+        tsconfigRootDir: _dirname, // Root directory of tsconfig.json
+      },
     },
   },
   pluginJs.configs.recommended,

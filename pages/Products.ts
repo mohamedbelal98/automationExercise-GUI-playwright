@@ -41,9 +41,7 @@ export class Products {
 
   async checkThatAllProductsTextDisplayedCorrectly() {
     await expect(this.allProductsTitle).toBeVisible();
-    await expect(this.allProductsTitle).toHaveText(
-      this.allProductsTextContent
-    );
+    await expect(this.allProductsTitle).toHaveText(this.allProductsTextContent);
   }
 
   async checkThatAllProductsAfterSearchRelatedToSearchKey(searchKey: string) {

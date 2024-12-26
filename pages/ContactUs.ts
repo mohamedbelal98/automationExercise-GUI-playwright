@@ -58,8 +58,6 @@ export class ContactUs {
 
   async checkThatSuccessMessageDisplaedCorrectly() {
     await expect(this.successMessage).toBeVisible();
-    await expect(this.successMessage).toHaveText(
-      this.successMessageContent
-    );
+    await expect(this.successMessage).toHaveText(this.successMessageContent);
   }
 }

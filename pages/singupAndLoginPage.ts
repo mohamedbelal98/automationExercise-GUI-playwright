@@ -162,21 +162,21 @@ export class SignupAndLoginPage {
 
   async checkThatNameAndEmailAddressAreCorrect() {
     const nameTextBoxValue = this.nameTextBox;
-    const signupEmailAddressTextBoxValue = this.emailAddressTextBoxLocator
-      .nth(1)
-      ;
-
+    const signupEmailAddressTextBoxValue =
+      this.emailAddressTextBoxLocator.nth(1);
     await expect(nameTextBoxValue).toHaveValue(this.nameTextInput);
-    await expect(signupEmailAddressTextBoxValue).toHaveValue(this.signupTextInput);
+    await expect(signupEmailAddressTextBoxValue).toHaveValue(
+      this.signupTextInput
+    );
   }
 
   async checkThatEmailAdressAndPasswordAreCorrect() {
-    const loginEmailAdressValue = this.emailAddressTextBoxLocator
-      .nth(0)
-      ;
+    const loginEmailAdressValue = this.emailAddressTextBoxLocator.nth(0);
     const passwordValue = this.loginPasswordTextBox;
 
-    await expect(loginEmailAdressValue).toHaveValue(this.emailAdressAlreadyExistInput);
+    await expect(loginEmailAdressValue).toHaveValue(
+      this.emailAdressAlreadyExistInput
+    );
     await expect(passwordValue).toHaveValue(this.passwordInput);
   }
 

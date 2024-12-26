@@ -35,7 +35,7 @@
     "tests/**/*",
     "pages/**/*",
     "*.ts",
-    "*.js",
+    "*.js"
   ],
   "exclude": ["node_modules", "dist"]
 }
