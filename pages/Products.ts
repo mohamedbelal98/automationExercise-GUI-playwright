@@ -41,7 +41,7 @@ export class Products {
 
   async checkThatAllProductsTextDisplayedCorrectly() {
     await expect(this.allProductsTitle).toBeVisible();
-    expect(await this.allProductsTitle.textContent()).toEqual(
+    await expect(this.allProductsTitle).toHaveText(
       this.allProductsTextContent
     );
   }

@@ -19,7 +19,7 @@ test.afterEach(async ({ page }, testInfo) => {
   await homePage.tearDown();
 });
 
-test.describe('Contact Us test cases', async () => {
+test.describe('Contact Us test cases', () => {
   test('Contact Us Form', { tag: ['@FullJourney'] }, async () => {
     await homePage.clickOnContactUsButton();
     await contactUs.checkThatContactUsPageIsLoaded();

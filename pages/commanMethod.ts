@@ -43,7 +43,7 @@ export class CommanMethod {
 
   async verifySubscription() {
     await expect(this.subscriptionTextLocator).toBeVisible();
-    expect(await this.subscriptionTextLocator.textContent()).toEqual(
+    await expect(this.subscriptionTextLocator).toHaveText(
       'Subscription'
     );
   }

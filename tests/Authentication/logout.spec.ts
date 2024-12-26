@@ -19,7 +19,7 @@ test.afterEach(async ({ page }, testInfo) => {
   homePage.tearDown();
 });
 
-test.describe('Logout Test Cases', async () => {
+test.describe('Logout Test Cases', () => {
   test('Logout User', { tag: ['@Auth', '@Regression'] }, async () => {
     await homePage.navigateToSignupAndLoginPage();
     await signupAndLoginPage.checkThatSignupAndLoginPageIsLoaded();

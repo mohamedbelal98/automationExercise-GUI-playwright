@@ -19,7 +19,7 @@ test.afterEach(async ({ page }, testInfo) => {
   homePage.tearDown();
 });
 
-test.describe('Subscription Test cases', async () => {
+test.describe('Subscription Test cases', () => {
   test(
     'Verify Subscription in home page',
     { tag: ['@FullJourney'] },

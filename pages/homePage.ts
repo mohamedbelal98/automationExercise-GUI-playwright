@@ -72,6 +72,6 @@ export class HomePage {
   }
 
   async checkUserIsNOTLoggedIn() {
-    await expect(this.loggedinUser).not.toBeVisible();
+    await expect(this.loggedinUser).toBeHidden();
   }
 }

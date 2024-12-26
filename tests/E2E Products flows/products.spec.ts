@@ -22,7 +22,7 @@ test.afterEach(async ({ page }, testInfo) => {
   homePage.tearDown();
 });
 
-test.describe('Products test cases', async () => {
+test.describe('Products test cases', () => {
   test(
     'Verify All Products and product detail page',
     { tag: ['@FullJourney'] },

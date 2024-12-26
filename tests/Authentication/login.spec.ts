@@ -19,7 +19,7 @@ test.afterEach(async ({ page }, testInfo) => {
   homePage.tearDown();
 });
 
-test.describe('Login Test Cases', async () => {
+test.describe('Login Test Cases', () => {
   test(
     'Login User with correct email and password',
     { tag: ['@Regression', '@Auth'] },

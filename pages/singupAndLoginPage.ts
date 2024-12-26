@@ -152,44 +152,44 @@ export class SignupAndLoginPage {
     await expect(this.newUserSignupText).toBeVisible();
     await expect(this.loginToYourAccountText).toBeVisible();
 
-    expect(await this.newUserSignupText.textContent()).toEqual(
+    await expect(this.newUserSignupText).toHaveText(
       this.newUserSignupTextValue
     );
-    expect(await this.loginToYourAccountText.textContent()).toEqual(
+    await expect(this.loginToYourAccountText).toHaveText(
       this.loginToYourAccountTextValue
     );
   }
 
   async checkThatNameAndEmailAddressAreCorrect() {
-    const nameTextBoxValue = await this.nameTextBox.inputValue();
-    const signupEmailAddressTextBoxValue = await this.emailAddressTextBoxLocator
+    const nameTextBoxValue = this.nameTextBox;
+    const signupEmailAddressTextBoxValue = this.emailAddressTextBoxLocator
       .nth(1)
-      .inputValue();
+      ;
 
-    expect(nameTextBoxValue).toEqual(this.nameTextInput);
-    expect(signupEmailAddressTextBoxValue).toEqual(this.signupTextInput);
+    await expect(nameTextBoxValue).toHaveValue(this.nameTextInput);
+    await expect(signupEmailAddressTextBoxValue).toHaveValue(this.signupTextInput);
   }
 
   async checkThatEmailAdressAndPasswordAreCorrect() {
-    const loginEmailAdressValue = await this.emailAddressTextBoxLocator
+    const loginEmailAdressValue = this.emailAddressTextBoxLocator
       .nth(0)
-      .inputValue();
-    const passwordValue = await this.loginPasswordTextBox.inputValue();
+      ;
+    const passwordValue = this.loginPasswordTextBox;
 
-    expect(loginEmailAdressValue).toEqual(this.emailAdressAlreadyExistInput);
-    expect(passwordValue).toEqual(this.passwordInput);
+    await expect(loginEmailAdressValue).toHaveValue(this.emailAdressAlreadyExistInput);
+    await expect(passwordValue).toHaveValue(this.passwordInput);
   }
 
   async checkThatEmailAddressAlreadyExistDisplayCorrectly() {
     await expect(this.emailAddressAlreadyExistText).toBeVisible();
-    expect(await this.emailAddressAlreadyExistText.textContent()).toEqual(
+    await expect(this.emailAddressAlreadyExistText).toHaveText(
       this.emailAdressAlreadyExistContent
     );
   }
 
   async checkThatEmailOrPasswordIsIncorrectIsDisplayedCorrectly() {
     await expect(this.emailOrPasswordIncorrect).toBeVisible();
-    expect(await this.emailOrPasswordIncorrect.textContent()).toEqual(
+    await expect(this.emailOrPasswordIncorrect).toHaveText(
       this.emailorpasswordIncorrectContent
     );
   }

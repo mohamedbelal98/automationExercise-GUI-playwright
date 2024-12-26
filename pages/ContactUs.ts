@@ -53,12 +53,12 @@ export class ContactUs {
 
   async checkThatContactUsPageIsLoaded() {
     await expect(this.getInTouchText).toBeVisible();
-    expect(await this.getInTouchText.textContent()).toEqual('Get In Touch');
+    await expect(this.getInTouchText).toHaveText('Get In Touch');
   }
 
   async checkThatSuccessMessageDisplaedCorrectly() {
     await expect(this.successMessage).toBeVisible();
-    expect(await this.successMessage.textContent()).toEqual(
+    await expect(this.successMessage).toHaveText(
       this.successMessageContent
     );
   }
