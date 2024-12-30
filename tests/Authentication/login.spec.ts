@@ -13,10 +13,9 @@ test.beforeEach(async ({ page }, testInfo) => {
   await homePage.checkThatHomePageBannerIsLoaded();
 });
 
-test.afterEach(async ({ page }, testInfo) => {
-  homePage = new HomePage(page);
+test.afterEach(async ({}, testInfo) => {
   console.log(`Finish ${testInfo.title}`);
-  homePage.tearDown();
+  await homePage.tearDown();
 });
 
 test.describe('Login Test Cases', () => {
