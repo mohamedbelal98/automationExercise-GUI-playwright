@@ -6,8 +6,8 @@
     "ui-mode": "npx playwright test --ui",
     "report": "npx playwright show-report",
     "register-testcases": "npx playwright test register.spec.ts --project=chromium",
-    "e2eDev": "powershell -Command \"$env:ENV='dev'; npx playwright test --project='chromium' $args\"",
-    "e2eProd": "powershell -Command \"$env:ENV='prod'; npx playwright test --project='chromium' $args\"",
+    "e2eDev": "env-cmd -f .env.dev playwright test --project='chromium'",
+    "e2eProd": "env-cmd -f .env.prod playwright test --project='chromium'",
     "prettier": "npx prettier . --check",
     "prettier:fix": "npx prettier . --write",
     "lint": "npx eslint .",
@@ -35,6 +35,7 @@
     "typescript-eslint": "^8.18.2"
   },
   "dependencies": {
-    "playwright": "^1.49.1"
-  }
+    "env-cmd": "^10.1.0"
+  },
+  "packageManager": "yarn@4.6.0"
 }

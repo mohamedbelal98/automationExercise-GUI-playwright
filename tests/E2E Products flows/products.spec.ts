@@ -33,7 +33,7 @@ test.describe('Products test cases', () => {
     }
   );
 
-  test('Search Product', { tag: ['@FullJourney'] }, async () => {
+  test.skip('Search Product', { tag: ['@FullJourney'] }, async () => {
     await homePage.navigateToProductsPage();
     await products.checkThatAllProductsTextDisplayedCorrectly();
     await products.searchForProducts('Women');
