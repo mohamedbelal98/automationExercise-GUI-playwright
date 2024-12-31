@@ -48,9 +48,9 @@ pipeline
                         script {
                             try {
                                 if (isUnix()) {
-                                sh 'yarn test:e2e'
+                                sh 'yarn e2eDev'
                                 } else {
-                                bat('yarn test:e2e')                                
+                                bat('yarn e2eDev')                                
                                 }
                             }
                             catch(e){
