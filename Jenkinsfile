@@ -70,7 +70,7 @@ pipeline
                                 allowMissing: false,
                                 alwaysLinkToLastBuild: true,
                                 keepAll: true,
-                                reportDir: 'reports/playwright-report',
+                                reportDir: 'playwright-report',
                                 reportFiles: 'index.html',
                                 reportName: 'Playwright Test Report',
                                 reportTitles: 'Regression'
