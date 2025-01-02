@@ -9,13 +9,13 @@ test.beforeEach(async ({ page }, testInfo) => {
   console.log(`Running ${testInfo.title}`);
   homePage = new HomePage(page);
   signupAndLoginPage = new SignupAndLoginPage(page);
-                                await homePage.navigateToHomePage();
-  await       homePage.checkThatHomePageBannerIsLoaded();
+  await homePage.navigateToHomePage();
+  await homePage.checkThatHomePageBannerIsLoaded();
 });
 
 test.afterEach(async ({}, testInfo) => {
   console.log(`Finish ${testInfo.title}`);
-        await homePage.tearDown();
+  await homePage.tearDown();
 });
 
 test.describe('Login Test Cases', () => {
