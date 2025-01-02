@@ -76,7 +76,7 @@ export default [
       'playwright.config.ts',
       'reports/',
       '.vscode/*',
-      ".yarn/",
+      '.yarn/',
     ],
   },
 ];
