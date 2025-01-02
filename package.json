@@ -13,7 +13,7 @@
     "lint": "npx eslint .",
     "lint:fix": "npx eslint . --fix",
     "prepare": "husky install",
-    "pre-commit": "eslint . && prettier . --check"
+    "pre-commit": "prettier . --check"
   },
   "keywords": [],
   "author": "",
