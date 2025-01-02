@@ -23,12 +23,12 @@ test.describe('Login Test Cases', () => {
     'Login User with correct email and password',
     { tag: ['@Regression', '@Auth'] },
     async () => {
-      await homePage.navigateToSignupAndLoginPage();
+                        await homePage.navigateToSignupAndLoginPage();
       await signupAndLoginPage.checkThatSignupAndLoginPageIsLoaded();
-      await signupAndLoginPage.enterLogincredentials();
+                await signupAndLoginPage.enterLogincredentials();
       await signupAndLoginPage.checkThatEmailAdressAndPasswordAreCorrect();
-      await signupAndLoginPage.clickOnLoginButton();
-      await homePage.checkUserIsLoggedInCorrectly();
+      await             signupAndLoginPage.clickOnLoginButton();
+                await       homePage.checkUserIsLoggedInCorrectly();
     }
   );
 
