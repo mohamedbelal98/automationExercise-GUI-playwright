@@ -1,2 +1,0 @@
-Running Logout User
-Finish Logout User

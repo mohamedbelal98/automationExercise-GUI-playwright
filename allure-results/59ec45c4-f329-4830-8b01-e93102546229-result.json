@@ -1,5 +1,5 @@
 {
-  "uuid": "4bbe58e0-b40a-452f-8bb0-1eb8cc2a5281",
+  "uuid": "59ec45c4-f329-4830-8b01-e93102546229",
   "name": "Register User",
   "historyId": "45996101b35e996abefda56cae9dd1c8:5bd835b0d6b1d4ada3b9f0db936e82c8",
   "status": "passed",
@@ -28,16 +28,16 @@
                   "steps": [],
                   "attachments": [],
                   "parameters": [],
-                  "start": 1735833663682,
+                  "start": 1735910687794,
                   "name": "browser.newContext",
-                  "stop": 1735833663687
+                  "stop": 1735910687798
                 }
               ],
               "attachments": [],
               "parameters": [],
-              "start": 1735833663682,
+              "start": 1735910687793,
               "name": "fixture: context",
-              "stop": 1735833663687
+              "stop": 1735910687799
             },
             {
               "status": "passed",
@@ -51,16 +51,16 @@
                   "steps": [],
                   "attachments": [],
                   "parameters": [],
-                  "start": 1735833663690,
+                  "start": 1735910687803,
                   "name": "browserContext.newPage",
-                  "stop": 1735833663819
+                  "stop": 1735910687972
                 }
               ],
               "attachments": [],
               "parameters": [],
-              "start": 1735833663688,
+              "start": 1735910687799,
               "name": "fixture: page",
-              "stop": 1735833663819
+              "stop": 1735910687972
             },
             {
               "status": "passed",
@@ -69,9 +69,9 @@
               "steps": [],
               "attachments": [],
               "parameters": [],
-              "start": 1735833663823,
+              "start": 1735910687977,
               "name": "page.route",
-              "stop": 1735833663827
+              "stop": 1735910687986
             },
             {
               "status": "passed",
@@ -80,9 +80,9 @@
               "steps": [],
               "attachments": [],
               "parameters": [],
-              "start": 1735833663828,
+              "start": 1735910687989,
               "name": "page.goto(/)",
-              "stop": 1735833667486
+              "stop": 1735910691539
             },
             {
               "status": "passed",
@@ -91,23 +91,23 @@
               "steps": [],
               "attachments": [],
               "parameters": [],
-              "start": 1735833667488,
+              "start": 1735910691541,
               "name": "expect.toBeVisible",
-              "stop": 1735833667520
+              "stop": 1735910691572
             }
           ],
           "attachments": [],
           "parameters": [],
-          "start": 1735833663678,
+          "start": 1735910687790,
           "name": "beforeEach hook",
-          "stop": 1735833667520
+          "stop": 1735910691572
         }
       ],
       "attachments": [],
       "parameters": [],
-      "start": 1735833663676,
+      "start": 1735910687790,
       "name": "Before Hooks",
-      "stop": 1735833667520
+      "stop": 1735910691572
     },
     {
       "status": "passed",
@@ -116,9 +116,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833667522,
+      "start": 1735910691574,
       "name": "locator.getByText(' Signup / Login').click",
-      "stop": 1735833668276
+      "stop": 1735910692310
     },
     {
       "status": "passed",
@@ -127,9 +127,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833668278,
+      "start": 1735910692312,
       "name": "expect.toBeVisible",
-      "stop": 1735833668328
+      "stop": 1735910692354
     },
     {
       "status": "passed",
@@ -138,9 +138,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833668330,
+      "start": 1735910692355,
       "name": "expect.toBeVisible",
-      "stop": 1735833668335
+      "stop": 1735910692360
     },
     {
       "status": "passed",
@@ -149,9 +149,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833668336,
+      "start": 1735910692362,
       "name": "expect.toHaveText",
-      "stop": 1735833668340
+      "stop": 1735910692367
     },
     {
       "status": "passed",
@@ -160,9 +160,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833668341,
+      "start": 1735910692368,
       "name": "expect.toHaveText",
-      "stop": 1735833668346
+      "stop": 1735910692373
     },
     {
       "status": "passed",
@@ -171,9 +171,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833668348,
+      "start": 1735910692375,
       "name": "locator.getByPlaceholder('Name').fill",
-      "stop": 1735833668359
+      "stop": 1735910692387
     },
     {
       "status": "passed",
@@ -182,9 +182,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833668361,
+      "start": 1735910692388,
       "name": "locator.getByPlaceholder('Email Address').nth(1).fill",
-      "stop": 1735833668373
+      "stop": 1735910692401
     },
     {
       "status": "passed",
@@ -193,9 +193,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833668375,
+      "start": 1735910692402,
       "name": "expect.toHaveValue",
-      "stop": 1735833668378
+      "stop": 1735910692406
     },
     {
       "status": "passed",
@@ -204,9 +204,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833668380,
+      "start": 1735910692407,
       "name": "expect.toHaveValue",
-      "stop": 1735833668385
+      "stop": 1735910692411
     },
     {
       "status": "passed",
@@ -215,9 +215,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833668387,
+      "start": 1735910692414,
       "name": "locator.getByRole('button', { name: 'Signup' }).click",
-      "stop": 1735833668933
+      "stop": 1735910692897
     },
     {
       "status": "passed",
@@ -226,9 +226,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833668936,
+      "start": 1735910692899,
       "name": "locator.click(#uniform-id_gender1)",
-      "stop": 1735833669230
+      "stop": 1735910693267
     },
     {
       "status": "passed",
@@ -237,9 +237,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833669233,
+      "start": 1735910693270,
       "name": "locator.fill(#password)",
-      "stop": 1735833669255
+      "stop": 1735910693304
     },
     {
       "status": "passed",
@@ -248,9 +248,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833669258,
+      "start": 1735910693308,
       "name": "locator.selectOption(#days)",
-      "stop": 1735833669271
+      "stop": 1735910693351
     },
     {
       "status": "passed",
@@ -259,9 +259,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833669272,
+      "start": 1735910693353,
       "name": "locator.selectOption(#months)",
-      "stop": 1735833669289
+      "stop": 1735910693444
     },
     {
       "status": "passed",
@@ -270,9 +270,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833669291,
+      "start": 1735910693447,
       "name": "locator.selectOption(#years)",
-      "stop": 1735833669307
+      "stop": 1735910693526
     },
     {
       "status": "passed",
@@ -281,9 +281,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833669309,
+      "start": 1735910693528,
       "name": "locator.click(#newsletter)",
-      "stop": 1735833669370
+      "stop": 1735910693566
     },
     {
       "status": "passed",
@@ -292,9 +292,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833669372,
+      "start": 1735910693567,
       "name": "locator.click(#optin)",
-      "stop": 1735833669426
+      "stop": 1735910693631
     },
     {
       "status": "passed",
@@ -303,9 +303,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833669429,
+      "start": 1735910693633,
       "name": "locator.fill(#first_name)",
-      "stop": 1735833669452
+      "stop": 1735910693652
     },
     {
       "status": "passed",
@@ -314,9 +314,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833669455,
+      "start": 1735910693654,
       "name": "locator.fill(#last_name)",
-      "stop": 1735833669473
+      "stop": 1735910693666
     },
     {
       "status": "passed",
@@ -325,9 +325,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833669475,
+      "start": 1735910693669,
       "name": "locator.fill(#company)",
-      "stop": 1735833669487
+      "stop": 1735910693688
     },
     {
       "status": "passed",
@@ -336,9 +336,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833669489,
+      "start": 1735910693691,
       "name": "locator.fill(#address1)",
-      "stop": 1735833669506
+      "stop": 1735910693703
     },
     {
       "status": "passed",
@@ -347,9 +347,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833669508,
+      "start": 1735910693705,
       "name": "locator.fill(#address2)",
-      "stop": 1735833669535
+      "stop": 1735910693724
     },
     {
       "status": "passed",
@@ -358,9 +358,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833669538,
+      "start": 1735910693726,
       "name": "locator.selectOption(#country)",
-      "stop": 1735833669597
+      "stop": 1735910693738
     },
     {
       "status": "passed",
@@ -369,9 +369,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833669600,
+      "start": 1735910693740,
       "name": "locator.fill(#state)",
-      "stop": 1735833669626
+      "stop": 1735910693756
     },
     {
       "status": "passed",
@@ -380,9 +380,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833669630,
+      "start": 1735910693759,
       "name": "locator.fill(#city)",
-      "stop": 1735833669667
+      "stop": 1735910693774
     },
     {
       "status": "passed",
@@ -391,9 +391,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833669670,
+      "start": 1735910693776,
       "name": "locator.fill(#zipcode)",
-      "stop": 1735833669689
+      "stop": 1735910693790
     },
     {
       "status": "passed",
@@ -402,9 +402,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833669692,
+      "start": 1735910693793,
       "name": "locator.fill(#mobile_number)",
-      "stop": 1735833669719
+      "stop": 1735910693809
     },
     {
       "status": "passed",
@@ -413,9 +413,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833669722,
+      "start": 1735910693812,
       "name": "locator.click([data-qa='create-account'])",
-      "stop": 1735833670482
+      "stop": 1735910694489
     },
     {
       "status": "passed",
@@ -424,9 +424,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833670487,
+      "start": 1735910694493,
       "name": "expect.toBeVisible",
-      "stop": 1735833670543
+      "stop": 1735910694539
     },
     {
       "status": "passed",
@@ -435,9 +435,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833670544,
+      "start": 1735910694541,
       "name": "expect.toHaveText",
-      "stop": 1735833670550
+      "stop": 1735910694548
     },
     {
       "status": "passed",
@@ -446,9 +446,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833670554,
+      "start": 1735910694551,
       "name": "page.screenshot",
-      "stop": 1735833671136
+      "stop": 1735910695081
     },
     {
       "status": "passed",
@@ -467,16 +467,16 @@
               "steps": [],
               "attachments": [],
               "parameters": [],
-              "start": 1735833671145,
+              "start": 1735910695088,
               "name": "page.close",
-              "stop": 1735833671155
+              "stop": 1735910695101
             }
           ],
           "attachments": [],
           "parameters": [],
-          "start": 1735833671142,
+          "start": 1735910695085,
           "name": "afterEach hook",
-          "stop": 1735833671155
+          "stop": 1735910695102
         },
         {
           "status": "passed",
@@ -485,9 +485,9 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1735833671155,
+          "start": 1735910695102,
           "name": "fixture: page",
-          "stop": 1735833671156
+          "stop": 1735910695103
         },
         {
           "status": "passed",
@@ -496,22 +496,22 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1735833671156,
+          "start": 1735910695103,
           "name": "fixture: context",
-          "stop": 1735833671157
+          "stop": 1735910695104
         }
       ],
       "attachments": [],
       "parameters": [],
-      "start": 1735833671141,
+      "start": 1735910695084,
       "name": "After Hooks",
-      "stop": 1735833671187
+      "stop": 1735910695141
     }
   ],
   "attachments": [
     {
       "name": "stdout",
-      "source": "072b7614-de09-4f37-bafe-5ec6999438ac-attachment.txt",
+      "source": "a88b79a2-4746-4250-8e9c-044ef45b1000-attachment.txt",
       "type": "text/plain"
     }
   ],
@@ -527,14 +527,14 @@
     { "name": "tag", "value": "Auth" },
     { "name": "tag", "value": "Regression" },
     { "name": "host", "value": "BolBol" },
-    { "name": "thread", "value": "pid-9112-worker-0" },
+    { "name": "thread", "value": "pid-14064-worker-0" },
     { "name": "parentSuite", "value": "chromium" },
     { "name": "suite", "value": "Authentication\\register.spec.ts" },
     { "name": "subSuite", "value": "Register Test cases" }
   ],
   "links": [],
-  "start": 1735833663676,
+  "start": 1735910687799,
   "testCaseId": "45996101b35e996abefda56cae9dd1c8",
   "fullName": "Authentication/register.spec.ts:26:7",
-  "stop": 1735833671177
+  "stop": 1735910695143
 }

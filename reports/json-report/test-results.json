@@ -20,7 +20,7 @@
         "D:\\Projects\\AutomationExercise-GUI-Playwright\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
         {
           "open": "always",
-          "outputFolder": "allure-results"
+          "outputFolder": "allure-report"
         }
       ],
       [
@@ -88,75 +88,22 @@
   },
   "suites": [
     {
-      "title": "E2E flows\\contactUs.spec.ts",
-      "file": "E2E flows/contactUs.spec.ts",
+      "title": "Authentication\\login.spec.ts",
+      "file": "Authentication/login.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Contact Us test cases",
-          "file": "E2E flows/contactUs.spec.ts",
+          "title": "Login Test Cases",
+          "file": "Authentication/login.spec.ts",
           "line": 21,
           "column": 6,
           "specs": [
             {
-              "title": "Contact Us Form",
+              "title": "Login User with correct email and password",
               "ok": true,
-              "tags": ["FullJourney"],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "skip"
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-01-02T16:04:14.840Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "b24d3ef6f1bec758ea99-5bdf815144e16718fb49",
-              "file": "E2E flows/contactUs.spec.ts",
-              "line": 22,
-              "column": 8
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "E2E flows\\subdcription.spec.ts",
-      "file": "E2E flows/subdcription.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Subscription Test cases",
-          "file": "E2E flows/subdcription.spec.ts",
-          "line": 21,
-          "column": 6,
-          "specs": [
-            {
-              "title": "Verify Subscription in home page",
-              "ok": true,
-              "tags": ["FullJourney"],
+              "tags": ["Regression", "Auth"],
               "tests": [
                 {
                   "timeout": 30000,
@@ -168,34 +115,34 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 8289,
+                      "duration": 8835,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "Running Verify Subscription in home page\n"
+                          "text": "Running Login User with correct email and password\n"
                         },
                         {
-                          "text": "Finish Verify Subscription in home page\n"
+                          "text": "Finish Login User with correct email and password\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-01-02T16:04:16.201Z",
+                      "startTime": "2025-01-03T13:24:25.861Z",
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "921107ccb5787d26c645-5dbd668fd576889137d0",
-              "file": "E2E flows/subdcription.spec.ts",
+              "id": "2c64546e8655eebcd8ac-f1b2ab2a52547db6ca1d",
+              "file": "Authentication/login.spec.ts",
               "line": 22,
               "column": 7
             },
             {
-              "title": "Verify Subscription in Cart page",
+              "title": "Login User with incorrect email and password",
               "ok": true,
-              "tags": ["FullJourney"],
+              "tags": ["Auth"],
               "tests": [
                 {
                   "timeout": 30000,
@@ -207,28 +154,28 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 6217,
+                      "duration": 5228,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "Running Verify Subscription in Cart page\n"
+                          "text": "Running Login User with incorrect email and password\n"
                         },
                         {
-                          "text": "Finish Verify Subscription in Cart page\n"
+                          "text": "Finish Login User with incorrect email and password\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-01-02T16:04:24.839Z",
+                      "startTime": "2025-01-03T13:24:34.937Z",
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "921107ccb5787d26c645-91bfc0c3f72a9c0c8182",
-              "file": "E2E flows/subdcription.spec.ts",
-              "line": 33,
+              "id": "2c64546e8655eebcd8ac-eb69a95fbed0287ba147",
+              "file": "Authentication/login.spec.ts",
+              "line": 35,
               "column": 7
             }
           ]
@@ -236,22 +183,22 @@
       ]
     },
     {
-      "title": "E2E Products flows\\products.spec.ts",
-      "file": "E2E Products flows/products.spec.ts",
+      "title": "Authentication\\logout.spec.ts",
+      "file": "Authentication/logout.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Products test cases",
-          "file": "E2E Products flows/products.spec.ts",
-          "line": 24,
+          "title": "Logout Test Cases",
+          "file": "Authentication/logout.spec.ts",
+          "line": 21,
           "column": 6,
           "specs": [
             {
-              "title": "Verify All Products and product detail page",
+              "title": "Logout User",
               "ok": true,
-              "tags": ["FullJourney"],
+              "tags": ["Auth", "Regression"],
               "tests": [
                 {
                   "timeout": 30000,
@@ -263,65 +210,124 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 5861,
+                      "duration": 7571,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "Running Verify All Products and product detail page\n"
+                          "text": "Running Logout User\n"
                         },
                         {
-                          "text": "Finish Verify All Products and product detail page\n"
+                          "text": "Finish Logout User\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-01-02T16:04:31.091Z",
+                      "startTime": "2025-01-03T13:24:40.188Z",
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "87c0dede8cca636c38ae-d319be667a9a26f8cdb4",
-              "file": "E2E Products flows/products.spec.ts",
-              "line": 25,
+              "id": "d8be4c4fbfc25e9d36d6-a2ce8e1590f3dacc8e0c",
+              "file": "Authentication/logout.spec.ts",
+              "line": 22,
               "column": 7
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Authentication\\register.spec.ts",
+      "file": "Authentication/register.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Register Test cases",
+          "file": "Authentication/register.spec.ts",
+          "line": 25,
+          "column": 6,
+          "specs": [
             {
-              "title": "Search Product",
+              "title": "Register User",
               "ok": true,
-              "tags": ["FullJourney"],
+              "tags": ["Auth", "Regression"],
               "tests": [
                 {
                   "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "skip"
-                    }
-                  ],
-                  "expectedStatus": "skipped",
+                  "annotations": [],
+                  "expectedStatus": "passed",
                   "projectId": "chromium",
                   "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 0,
-                      "status": "skipped",
-                      "duration": 0,
+                      "status": "passed",
+                      "duration": 7344,
                       "errors": [],
-                      "stdout": [],
+                      "stdout": [
+                        {
+                          "text": "Running Register User\n"
+                        },
+                        {
+                          "text": "Finish Register User\n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-01-02T16:04:36.965Z",
+                      "startTime": "2025-01-03T13:24:47.787Z",
                       "attachments": []
                     }
                   ],
-                  "status": "skipped"
+                  "status": "expected"
                 }
               ],
-              "id": "87c0dede8cca636c38ae-c5cc1aad03c829fa373f",
-              "file": "E2E Products flows/products.spec.ts",
-              "line": 36,
-              "column": 8
+              "id": "19086cea57f2d3f7d02a-1216c33462a803cdc803",
+              "file": "Authentication/register.spec.ts",
+              "line": 26,
+              "column": 7
+            },
+            {
+              "title": "Register User with existing email",
+              "ok": true,
+              "tags": ["Auth"],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 5952,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running Register User with existing email\n"
+                        },
+                        {
+                          "text": "Finish Register User with existing email\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-01-03T13:24:55.141Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "19086cea57f2d3f7d02a-e13660b6b8b1a92dc1f1",
+              "file": "Authentication/register.spec.ts",
+              "line": 42,
+              "column": 7
             }
           ]
         }
@@ -330,10 +336,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-01-02T16:04:14.679Z",
-    "duration": 22391.456,
-    "expected": 3,
-    "skipped": 2,
+    "startTime": "2025-01-03T13:24:24.969Z",
+    "duration": 36315.078,
+    "expected": 5,
+    "skipped": 0,
     "unexpected": 0,
     "flaky": 0
   }

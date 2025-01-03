@@ -1,7 +1,7 @@
 {
-  "uuid": "487a3507-851a-4655-81d6-fdd0590fc52c",
-  "name": "Verify All Products and product detail page",
-  "historyId": "76b33f02fe3cec834a0a8bbf0b40c7c7:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "uuid": "9f88a326-8dff-44ac-952b-d47bccd86082",
+  "name": "Logout User",
+  "historyId": "e23d190e520c915c37fbfe0d145b343b:5bd835b0d6b1d4ada3b9f0db936e82c8",
   "status": "passed",
   "statusDetails": {},
   "stage": "finished",
@@ -28,16 +28,16 @@
                   "steps": [],
                   "attachments": [],
                   "parameters": [],
-                  "start": 1735833871105,
+                  "start": 1735909854665,
                   "name": "browser.newContext",
-                  "stop": 1735833871116
+                  "stop": 1735909854680
                 }
               ],
               "attachments": [],
               "parameters": [],
-              "start": 1735833871103,
+              "start": 1735909854663,
               "name": "fixture: context",
-              "stop": 1735833871117
+              "stop": 1735909854684
             },
             {
               "status": "passed",
@@ -51,16 +51,16 @@
                   "steps": [],
                   "attachments": [],
                   "parameters": [],
-                  "start": 1735833871122,
+                  "start": 1735909854693,
                   "name": "browserContext.newPage",
-                  "stop": 1735833871235
+                  "stop": 1735909854903
                 }
               ],
               "attachments": [],
               "parameters": [],
-              "start": 1735833871119,
+              "start": 1735909854685,
               "name": "fixture: page",
-              "stop": 1735833871235
+              "stop": 1735909854903
             },
             {
               "status": "passed",
@@ -69,9 +69,9 @@
               "steps": [],
               "attachments": [],
               "parameters": [],
-              "start": 1735833871240,
+              "start": 1735909854907,
               "name": "page.route",
-              "stop": 1735833871242
+              "stop": 1735909854915
             },
             {
               "status": "passed",
@@ -80,9 +80,9 @@
               "steps": [],
               "attachments": [],
               "parameters": [],
-              "start": 1735833871245,
+              "start": 1735909854918,
               "name": "page.goto(/)",
-              "stop": 1735833875366
+              "stop": 1735909858283
             },
             {
               "status": "passed",
@@ -91,23 +91,23 @@
               "steps": [],
               "attachments": [],
               "parameters": [],
-              "start": 1735833875369,
+              "start": 1735909858286,
               "name": "expect.toBeVisible",
-              "stop": 1735833875398
+              "stop": 1735909858318
             }
           ],
           "attachments": [],
           "parameters": [],
-          "start": 1735833871094,
+          "start": 1735909854657,
           "name": "beforeEach hook",
-          "stop": 1735833875398
+          "stop": 1735909858318
         }
       ],
       "attachments": [],
       "parameters": [],
-      "start": 1735833871093,
+      "start": 1735909854656,
       "name": "Before Hooks",
-      "stop": 1735833875399
+      "stop": 1735909858318
     },
     {
       "status": "passed",
@@ -116,9 +116,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833875400,
-      "name": "locator.getByText(' Products').click",
-      "stop": 1735833875722
+      "start": 1735909858320,
+      "name": "locator.getByText(' Signup / Login').click",
+      "stop": 1735909859061
     },
     {
       "status": "passed",
@@ -127,9 +127,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833875725,
+      "start": 1735909859064,
       "name": "expect.toBeVisible",
-      "stop": 1735833875845
+      "stop": 1735909859113
     },
     {
       "status": "passed",
@@ -138,9 +138,20 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833875849,
+      "start": 1735909859116,
+      "name": "expect.toBeVisible",
+      "stop": 1735909859122
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735909859123,
       "name": "expect.toHaveText",
-      "stop": 1735833875905
+      "stop": 1735909859127
     },
     {
       "status": "passed",
@@ -149,9 +160,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833875908,
-      "name": "locator.getByText('View Product').first().click",
-      "stop": 1735833876794
+      "start": 1735909859128,
+      "name": "expect.toHaveText",
+      "stop": 1735909859133
     },
     {
       "status": "passed",
@@ -160,9 +171,64 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833876798,
+      "start": 1735909859135,
+      "name": "locator.getByPlaceholder('Email Address').first().fill",
+      "stop": 1735909859150
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735909859153,
+      "name": "locator.getByPlaceholder('Password').fill",
+      "stop": 1735909859180
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735909859181,
+      "name": "expect.toHaveValue",
+      "stop": 1735909859193
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735909859195,
+      "name": "expect.toHaveValue",
+      "stop": 1735909859202
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735909859205,
+      "name": "locator.click([data-qa='login-button'])",
+      "stop": 1735909859959
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735909859960,
       "name": "expect.toBeVisible",
-      "stop": 1735833876862
+      "stop": 1735909860109
     },
     {
       "status": "passed",
@@ -171,9 +237,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833876865,
-      "name": "expect.toBeVisible",
-      "stop": 1735833876876
+      "start": 1735909860112,
+      "name": "locator.getByText(' Logout').click",
+      "stop": 1735909861499
     },
     {
       "status": "passed",
@@ -182,42 +248,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833876878,
-      "name": "expect.toBeVisible",
-      "stop": 1735833876885
-    },
-    {
-      "status": "passed",
-      "statusDetails": {},
-      "stage": "finished",
-      "steps": [],
-      "attachments": [],
-      "parameters": [],
-      "start": 1735833876886,
-      "name": "expect.toBeVisible",
-      "stop": 1735833876892
-    },
-    {
-      "status": "passed",
-      "statusDetails": {},
-      "stage": "finished",
-      "steps": [],
-      "attachments": [],
-      "parameters": [],
-      "start": 1735833876895,
-      "name": "expect.toBeVisible",
-      "stop": 1735833876900
-    },
-    {
-      "status": "passed",
-      "statusDetails": {},
-      "stage": "finished",
-      "steps": [],
-      "attachments": [],
-      "parameters": [],
-      "start": 1735833876902,
-      "name": "expect.toBeVisible",
-      "stop": 1735833876907
+      "start": 1735909861502,
+      "name": "expect.toBeHidden",
+      "stop": 1735909861521
     },
     {
       "status": "passed",
@@ -236,16 +269,16 @@
               "steps": [],
               "attachments": [],
               "parameters": [],
-              "start": 1735833876912,
+              "start": 1735909861524,
               "name": "page.close",
-              "stop": 1735833876917
+              "stop": 1735909861530
             }
           ],
           "attachments": [],
           "parameters": [],
-          "start": 1735833876909,
+          "start": 1735909861522,
           "name": "afterEach hook",
-          "stop": 1735833876917
+          "stop": 1735909861530
         },
         {
           "status": "passed",
@@ -254,9 +287,9 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1735833876918,
+          "start": 1735909861531,
           "name": "fixture: page",
-          "stop": 1735833876907
+          "stop": 1735909861532
         },
         {
           "status": "passed",
@@ -265,22 +298,22 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1735833876918,
+          "start": 1735909861533,
           "name": "fixture: context",
-          "stop": 1735833876919
+          "stop": 1735909861534
         }
       ],
       "attachments": [],
       "parameters": [],
-      "start": 1735833876908,
+      "start": 1735909861521,
       "name": "After Hooks",
-      "stop": 1735833876964
+      "stop": 1735909861605
     }
   ],
   "attachments": [
     {
       "name": "stdout",
-      "source": "d3f48e8c-27aa-4520-86c9-178ef085fe15-attachment.txt",
+      "source": "89911377-c6d8-4212-af09-b9281b2b6c1f-attachment.txt",
       "type": "text/plain"
     }
   ],
@@ -288,21 +321,22 @@
   "labels": [
     { "name": "language", "value": "javascript" },
     { "name": "framework", "value": "playwright" },
-    { "name": "package", "value": "E2E Products flows.products.spec.ts" },
+    { "name": "package", "value": "Authentication.logout.spec.ts" },
     {
       "name": "titlePath",
-      "value": " > chromium > E2E Products flows\\products.spec.ts > Products test cases"
+      "value": " > chromium > Authentication\\logout.spec.ts > Logout Test Cases"
     },
-    { "name": "tag", "value": "FullJourney" },
+    { "name": "tag", "value": "Auth" },
+    { "name": "tag", "value": "Regression" },
     { "name": "host", "value": "BolBol" },
-    { "name": "thread", "value": "pid-11292-worker-0" },
+    { "name": "thread", "value": "pid-10916-worker-0" },
     { "name": "parentSuite", "value": "chromium" },
-    { "name": "suite", "value": "E2E Products flows\\products.spec.ts" },
-    { "name": "subSuite", "value": "Products test cases" }
+    { "name": "suite", "value": "Authentication\\logout.spec.ts" },
+    { "name": "subSuite", "value": "Logout Test Cases" }
   ],
   "links": [],
-  "start": 1735833871083,
-  "testCaseId": "76b33f02fe3cec834a0a8bbf0b40c7c7",
-  "fullName": "E2E Products flows/products.spec.ts:25:7",
-  "stop": 1735833876944
+  "start": 1735909854658,
+  "testCaseId": "e23d190e520c915c37fbfe0d145b343b",
+  "fullName": "Authentication/logout.spec.ts:22:7",
+  "stop": 1735909861594
 }

@@ -1,5 +1,5 @@
 {
-  "uuid": "08e7c0eb-6b65-4bfc-bc59-83ac92970f98",
+  "uuid": "b9e35748-e81c-4415-a75a-dc21170f05e4",
   "name": "Search Product",
   "historyId": "3c50ea0d3c02ddf8ad36fa16fdf2cc5c:5bd835b0d6b1d4ada3b9f0db936e82c8",
   "status": "skipped",
@@ -13,9 +13,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833876966,
+      "start": 1735909892480,
       "name": "After Hooks",
-      "stop": 1735833876964
+      "stop": 1735909892481
     }
   ],
   "attachments": [],
@@ -30,14 +30,14 @@
     },
     { "name": "tag", "value": "FullJourney" },
     { "name": "host", "value": "BolBol" },
-    { "name": "thread", "value": "pid-11292-worker-0" },
+    { "name": "thread", "value": "pid-10916-worker-0" },
     { "name": "parentSuite", "value": "chromium" },
     { "name": "suite", "value": "E2E Products flows\\products.spec.ts" },
     { "name": "subSuite", "value": "Products test cases" }
   ],
   "links": [],
-  "start": 1735833876963,
+  "start": 1735909892492,
   "testCaseId": "3c50ea0d3c02ddf8ad36fa16fdf2cc5c",
   "fullName": "E2E Products flows/products.spec.ts:36:8",
-  "stop": 1735833876965
+  "stop": 1735909892494
 }

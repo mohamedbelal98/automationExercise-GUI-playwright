@@ -1,7 +1,7 @@
 {
-  "uuid": "498af4f9-0dc6-4a71-a20f-00debc6d9ba9",
-  "name": "Verify Subscription in home page",
-  "historyId": "5cfd68b8630898d00b15a99f9df5cc77:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "uuid": "47cb2730-49a2-4ee5-9e3f-d075a6d11a78",
+  "name": "Login User with correct email and password",
+  "historyId": "2fad3f60217dbedeb4d58b0a3dfc831c:5bd835b0d6b1d4ada3b9f0db936e82c8",
   "status": "passed",
   "statusDetails": {},
   "stage": "finished",
@@ -28,16 +28,16 @@
                   "steps": [],
                   "attachments": [],
                   "parameters": [],
-                  "start": 1735833856271,
+                  "start": 1735909778492,
                   "name": "browserType.launch",
-                  "stop": 1735833856560
+                  "stop": 1735909779495
                 }
               ],
               "attachments": [],
               "parameters": [],
-              "start": 1735833856256,
+              "start": 1735909778481,
               "name": "fixture: browser",
-              "stop": 1735833856561
+              "stop": 1735909779496
             },
             {
               "status": "passed",
@@ -51,16 +51,16 @@
                   "steps": [],
                   "attachments": [],
                   "parameters": [],
-                  "start": 1735833856568,
+                  "start": 1735909779503,
                   "name": "browser.newContext",
-                  "stop": 1735833856583
+                  "stop": 1735909779518
                 }
               ],
               "attachments": [],
               "parameters": [],
-              "start": 1735833856564,
+              "start": 1735909779498,
               "name": "fixture: context",
-              "stop": 1735833856586
+              "stop": 1735909779523
             },
             {
               "status": "passed",
@@ -74,16 +74,16 @@
                   "steps": [],
                   "attachments": [],
                   "parameters": [],
-                  "start": 1735833856593,
+                  "start": 1735909779529,
                   "name": "browserContext.newPage",
-                  "stop": 1735833856823
+                  "stop": 1735909780400
                 }
               ],
               "attachments": [],
               "parameters": [],
-              "start": 1735833856588,
+              "start": 1735909779525,
               "name": "fixture: page",
-              "stop": 1735833856824
+              "stop": 1735909780400
             },
             {
               "status": "passed",
@@ -92,9 +92,9 @@
               "steps": [],
               "attachments": [],
               "parameters": [],
-              "start": 1735833856835,
+              "start": 1735909780409,
               "name": "page.route",
-              "stop": 1735833856846
+              "stop": 1735909780420
             },
             {
               "status": "passed",
@@ -103,9 +103,9 @@
               "steps": [],
               "attachments": [],
               "parameters": [],
-              "start": 1735833856851,
+              "start": 1735909780428,
               "name": "page.goto(/)",
-              "stop": 1735833864414
+              "stop": 1735909787109
             },
             {
               "status": "passed",
@@ -114,23 +114,23 @@
               "steps": [],
               "attachments": [],
               "parameters": [],
-              "start": 1735833864418,
+              "start": 1735909787112,
               "name": "expect.toBeVisible",
-              "stop": 1735833864455
+              "stop": 1735909787165
             }
           ],
           "attachments": [],
           "parameters": [],
-          "start": 1735833856224,
+          "start": 1735909778467,
           "name": "beforeEach hook",
-          "stop": 1735833864455
+          "stop": 1735909787165
         }
       ],
       "attachments": [],
       "parameters": [],
-      "start": 1735833856222,
+      "start": 1735909778465,
       "name": "Before Hooks",
-      "stop": 1735833864456
+      "stop": 1735909787166
     },
     {
       "status": "passed",
@@ -139,9 +139,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833864459,
-      "name": "locator.scrollIntoViewIfNeeded(footer)",
-      "stop": 1735833864490
+      "start": 1735909787168,
+      "name": "locator.getByText(' Signup / Login').click",
+      "stop": 1735909788011
     },
     {
       "status": "passed",
@@ -150,9 +150,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833864492,
+      "start": 1735909788022,
       "name": "expect.toBeVisible",
-      "stop": 1735833864509
+      "stop": 1735909788096
     },
     {
       "status": "passed",
@@ -161,9 +161,20 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833864511,
+      "start": 1735909788098,
+      "name": "expect.toBeVisible",
+      "stop": 1735909788104
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735909788106,
       "name": "expect.toHaveText",
-      "stop": 1735833864535
+      "stop": 1735909788124
     },
     {
       "status": "passed",
@@ -172,9 +183,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833864539,
-      "name": "locator.getByPlaceholder('Your email address').fill",
-      "stop": 1735833864652
+      "start": 1735909788126,
+      "name": "expect.toHaveText",
+      "stop": 1735909788142
     },
     {
       "status": "passed",
@@ -183,9 +194,9 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833864657,
-      "name": "locator.click(#subscribe)",
-      "stop": 1735833864768
+      "start": 1735909788147,
+      "name": "locator.getByPlaceholder('Email Address').first().fill",
+      "stop": 1735909788188
     },
     {
       "status": "passed",
@@ -194,9 +205,53 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1735833864770,
+      "start": 1735909788189,
+      "name": "locator.getByPlaceholder('Password').fill",
+      "stop": 1735909788204
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735909788209,
+      "name": "expect.toHaveValue",
+      "stop": 1735909788235
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735909788239,
+      "name": "expect.toHaveValue",
+      "stop": 1735909788311
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735909788315,
+      "name": "locator.click([data-qa='login-button'])",
+      "stop": 1735909788991
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735909788993,
       "name": "expect.toBeVisible",
-      "stop": 1735833864776
+      "stop": 1735909789103
     },
     {
       "status": "passed",
@@ -215,16 +270,16 @@
               "steps": [],
               "attachments": [],
               "parameters": [],
-              "start": 1735833864780,
+              "start": 1735909789115,
               "name": "page.close",
-              "stop": 1735833864805
+              "stop": 1735909789156
             }
           ],
           "attachments": [],
           "parameters": [],
-          "start": 1735833864777,
+          "start": 1735909789107,
           "name": "afterEach hook",
-          "stop": 1735833864805
+          "stop": 1735909789156
         },
         {
           "status": "passed",
@@ -233,9 +288,9 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1735833864807,
+          "start": 1735909789157,
           "name": "fixture: page",
-          "stop": 1735833864808
+          "stop": 1735909789158
         },
         {
           "status": "passed",
@@ -244,22 +299,22 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1735833864809,
+          "start": 1735909789158,
           "name": "fixture: context",
-          "stop": 1735833864810
+          "stop": 1735909789159
         }
       ],
       "attachments": [],
       "parameters": [],
-      "start": 1735833864776,
+      "start": 1735909789105,
       "name": "After Hooks",
-      "stop": 1735833864838
+      "stop": 1735909789227
     }
   ],
   "attachments": [
     {
       "name": "stdout",
-      "source": "f62908a1-4e78-495c-9831-8f953a1393f2-attachment.txt",
+      "source": "3b46cb35-38cd-4486-a0bb-f30d3dec26ab-attachment.txt",
       "type": "text/plain"
     }
   ],
@@ -267,21 +322,22 @@
   "labels": [
     { "name": "language", "value": "javascript" },
     { "name": "framework", "value": "playwright" },
-    { "name": "package", "value": "E2E flows.subdcription.spec.ts" },
+    { "name": "package", "value": "Authentication.login.spec.ts" },
     {
       "name": "titlePath",
-      "value": " > chromium > E2E flows\\subdcription.spec.ts > Subscription Test cases"
+      "value": " > chromium > Authentication\\login.spec.ts > Login Test Cases"
     },
-    { "name": "tag", "value": "FullJourney" },
+    { "name": "tag", "value": "Regression" },
+    { "name": "tag", "value": "Auth" },
     { "name": "host", "value": "BolBol" },
-    { "name": "thread", "value": "pid-11292-worker-0" },
+    { "name": "thread", "value": "pid-2036-worker-0" },
     { "name": "parentSuite", "value": "chromium" },
-    { "name": "suite", "value": "E2E flows\\subdcription.spec.ts" },
-    { "name": "subSuite", "value": "Subscription Test cases" }
+    { "name": "suite", "value": "Authentication\\login.spec.ts" },
+    { "name": "subSuite", "value": "Login Test Cases" }
   ],
   "links": [],
-  "start": 1735833856194,
-  "testCaseId": "5cfd68b8630898d00b15a99f9df5cc77",
-  "fullName": "E2E flows/subdcription.spec.ts:22:7",
-  "stop": 1735833864483
+  "start": 1735909778466,
+  "testCaseId": "2fad3f60217dbedeb4d58b0a3dfc831c",
+  "fullName": "Authentication/login.spec.ts:22:7",
+  "stop": 1735909788195
 }
