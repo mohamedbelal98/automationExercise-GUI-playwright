@@ -13,7 +13,10 @@
     "lint": "npx eslint .",
     "lint:fix": "npx eslint . --fix",
     "prepare": "husky install",
-    "pre-commit": "npx prettier . --check"
+    "pre-commit": "npx prettier . --check",
+    "allure-generate": "allure generate allure-results --clean",
+    "allure-generate-report": "allure open allure-report",
+    "allure-report": "allure generate allure-results --clean && allure open allure-report"
   },
   "keywords": [],
   "author": "",
@@ -21,10 +24,11 @@
   "description": "",
   "devDependencies": {
     "@eslint/js": "^9.17.0",
-    "@playwright/test": "^1.48.2",
+    "@playwright/test": "^1.49.1",
     "@types/node": "^22.10.2",
     "@typescript-eslint/eslint-plugin": "^8.18.2",
     "@typescript-eslint/parser": "^8.18.2",
+    "allure-playwright": "^3.0.7",
     "dotenv": "^16.4.5",
     "eslint": "^9.17.0",
     "eslint-config-prettier": "^9.1.0",

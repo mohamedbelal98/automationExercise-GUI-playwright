@@ -1,0 +1,31 @@
+{
+  "uuid": "0bcd5949-8d3d-42ba-a08f-868f39f04623",
+  "name": "Contact Us Form",
+  "historyId": "a43c899518921eebaddb7276e9daa6d8:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "skipped",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "E2E flows.contactUs.spec.ts" },
+    {
+      "name": "titlePath",
+      "value": " > chromium > E2E flows\\contactUs.spec.ts > Contact Us test cases"
+    },
+    { "name": "tag", "value": "FullJourney" },
+    { "name": "host", "value": "BolBol" },
+    { "name": "thread", "value": "pid-11292-worker--1" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "suite", "value": "E2E flows\\contactUs.spec.ts" },
+    { "name": "subSuite", "value": "Contact Us test cases" }
+  ],
+  "links": [],
+  "start": 1735833854843,
+  "testCaseId": "a43c899518921eebaddb7276e9daa6d8",
+  "fullName": "E2E flows/contactUs.spec.ts:22:8",
+  "stop": 1735833854847
+}

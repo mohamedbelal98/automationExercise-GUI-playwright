@@ -1,0 +1,340 @@
+{
+  "config": {
+    "configFile": "D:\\Projects\\AutomationExercise-GUI-Playwright\\playwright.config.ts",
+    "rootDir": "D:/Projects/AutomationExercise-GUI-Playwright/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      ["list", null],
+      [
+        "D:\\Projects\\AutomationExercise-GUI-Playwright\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        {
+          "open": "always",
+          "outputFolder": "allure-results"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "always",
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/json-report/test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/Projects/AutomationExercise-GUI-Playwright/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/Projects/AutomationExercise-GUI-Playwright/tests",
+        "testIgnore": [],
+        "testMatch": ["**/*.@(spec|test).?(c|m)[jt]s?(x)"],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/Projects/AutomationExercise-GUI-Playwright/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {},
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/Projects/AutomationExercise-GUI-Playwright/tests",
+        "testIgnore": [],
+        "testMatch": ["**/*.@(spec|test).?(c|m)[jt]s?(x)"],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/Projects/AutomationExercise-GUI-Playwright/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {},
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/Projects/AutomationExercise-GUI-Playwright/tests",
+        "testIgnore": [],
+        "testMatch": ["**/*.@(spec|test).?(c|m)[jt]s?(x)"],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.48.2",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "E2E flows\\contactUs.spec.ts",
+      "file": "E2E flows/contactUs.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Contact Us test cases",
+          "file": "E2E flows/contactUs.spec.ts",
+          "line": 21,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Contact Us Form",
+              "ok": true,
+              "tags": ["FullJourney"],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-01-02T16:04:14.840Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b24d3ef6f1bec758ea99-5bdf815144e16718fb49",
+              "file": "E2E flows/contactUs.spec.ts",
+              "line": 22,
+              "column": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "E2E flows\\subdcription.spec.ts",
+      "file": "E2E flows/subdcription.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Subscription Test cases",
+          "file": "E2E flows/subdcription.spec.ts",
+          "line": 21,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify Subscription in home page",
+              "ok": true,
+              "tags": ["FullJourney"],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 8289,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running Verify Subscription in home page\n"
+                        },
+                        {
+                          "text": "Finish Verify Subscription in home page\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-01-02T16:04:16.201Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "921107ccb5787d26c645-5dbd668fd576889137d0",
+              "file": "E2E flows/subdcription.spec.ts",
+              "line": 22,
+              "column": 7
+            },
+            {
+              "title": "Verify Subscription in Cart page",
+              "ok": true,
+              "tags": ["FullJourney"],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 6217,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running Verify Subscription in Cart page\n"
+                        },
+                        {
+                          "text": "Finish Verify Subscription in Cart page\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-01-02T16:04:24.839Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "921107ccb5787d26c645-91bfc0c3f72a9c0c8182",
+              "file": "E2E flows/subdcription.spec.ts",
+              "line": 33,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "E2E Products flows\\products.spec.ts",
+      "file": "E2E Products flows/products.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Products test cases",
+          "file": "E2E Products flows/products.spec.ts",
+          "line": 24,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify All Products and product detail page",
+              "ok": true,
+              "tags": ["FullJourney"],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 5861,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Running Verify All Products and product detail page\n"
+                        },
+                        {
+                          "text": "Finish Verify All Products and product detail page\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-01-02T16:04:31.091Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "87c0dede8cca636c38ae-d319be667a9a26f8cdb4",
+              "file": "E2E Products flows/products.spec.ts",
+              "line": 25,
+              "column": 7
+            },
+            {
+              "title": "Search Product",
+              "ok": true,
+              "tags": ["FullJourney"],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-01-02T16:04:36.965Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "87c0dede8cca636c38ae-c5cc1aad03c829fa373f",
+              "file": "E2E Products flows/products.spec.ts",
+              "line": 36,
+              "column": 8
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-01-02T16:04:14.679Z",
+    "duration": 22391.456,
+    "expected": 3,
+    "skipped": 2,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

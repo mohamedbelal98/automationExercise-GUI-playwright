@@ -1,0 +1,275 @@
+{
+  "uuid": "6021592e-0348-4b30-91bf-3e360db9e146",
+  "name": "Verify Subscription in Cart page",
+  "historyId": "254cae3515cfcab95f2d8e7f683a38b6:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "start": 1735833864853,
+                  "name": "browser.newContext",
+                  "stop": 1735833864863
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "start": 1735833864850,
+              "name": "fixture: context",
+              "stop": 1735833864865
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "start": 1735833864872,
+                  "name": "browserContext.newPage",
+                  "stop": 1735833865007
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "start": 1735833864866,
+              "name": "fixture: page",
+              "stop": 1735833865007
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1735833865012,
+              "name": "page.route",
+              "stop": 1735833865014
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1735833865018,
+              "name": "page.goto(/)",
+              "stop": 1735833869692
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1735833869695,
+              "name": "expect.toBeVisible",
+              "stop": 1735833869743
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1735833864842,
+          "name": "beforeEach hook",
+          "stop": 1735833869743
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833864841,
+      "name": "Before Hooks",
+      "stop": 1735833869744
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833869746,
+      "name": "locator.getByRole('link', { name: ' Cart' }).click",
+      "stop": 1735833870569
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833870572,
+      "name": "locator.scrollIntoViewIfNeeded(footer)",
+      "stop": 1735833870772
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833870774,
+      "name": "expect.toBeVisible",
+      "stop": 1735833870792
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833870795,
+      "name": "expect.toHaveText",
+      "stop": 1735833870874
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833870880,
+      "name": "locator.getByPlaceholder('Your email address').fill",
+      "stop": 1735833870919
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833870921,
+      "name": "locator.click(#subscribe)",
+      "stop": 1735833871001
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833871003,
+      "name": "expect.toBeVisible",
+      "stop": 1735833871013
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1735833871019,
+              "name": "page.close",
+              "stop": 1735833871026
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1735833871015,
+          "name": "afterEach hook",
+          "stop": 1735833871026
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1735833871027,
+          "name": "fixture: page",
+          "stop": 1735833871016
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1735833871029,
+          "name": "fixture: context",
+          "stop": 1735833871018
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833871014,
+      "name": "After Hooks",
+      "stop": 1735833871072
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "80ba40eb-6cce-4f5f-9504-aa75a65d8f61-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "E2E flows.subdcription.spec.ts" },
+    {
+      "name": "titlePath",
+      "value": " > chromium > E2E flows\\subdcription.spec.ts > Subscription Test cases"
+    },
+    { "name": "tag", "value": "FullJourney" },
+    { "name": "host", "value": "BolBol" },
+    { "name": "thread", "value": "pid-11292-worker-0" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "suite", "value": "E2E flows\\subdcription.spec.ts" },
+    { "name": "subSuite", "value": "Subscription Test cases" }
+  ],
+  "links": [],
+  "start": 1735833864836,
+  "testCaseId": "254cae3515cfcab95f2d8e7f683a38b6",
+  "fullName": "E2E flows/subdcription.spec.ts:33:7",
+  "stop": 1735833871053
+}

@@ -1,0 +1,308 @@
+{
+  "uuid": "487a3507-851a-4655-81d6-fdd0590fc52c",
+  "name": "Verify All Products and product detail page",
+  "historyId": "76b33f02fe3cec834a0a8bbf0b40c7c7:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "start": 1735833871105,
+                  "name": "browser.newContext",
+                  "stop": 1735833871116
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "start": 1735833871103,
+              "name": "fixture: context",
+              "stop": 1735833871117
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "start": 1735833871122,
+                  "name": "browserContext.newPage",
+                  "stop": 1735833871235
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "start": 1735833871119,
+              "name": "fixture: page",
+              "stop": 1735833871235
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1735833871240,
+              "name": "page.route",
+              "stop": 1735833871242
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1735833871245,
+              "name": "page.goto(/)",
+              "stop": 1735833875366
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1735833875369,
+              "name": "expect.toBeVisible",
+              "stop": 1735833875398
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1735833871094,
+          "name": "beforeEach hook",
+          "stop": 1735833875398
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833871093,
+      "name": "Before Hooks",
+      "stop": 1735833875399
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833875400,
+      "name": "locator.getByText(' Products').click",
+      "stop": 1735833875722
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833875725,
+      "name": "expect.toBeVisible",
+      "stop": 1735833875845
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833875849,
+      "name": "expect.toHaveText",
+      "stop": 1735833875905
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833875908,
+      "name": "locator.getByText('View Product').first().click",
+      "stop": 1735833876794
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833876798,
+      "name": "expect.toBeVisible",
+      "stop": 1735833876862
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833876865,
+      "name": "expect.toBeVisible",
+      "stop": 1735833876876
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833876878,
+      "name": "expect.toBeVisible",
+      "stop": 1735833876885
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833876886,
+      "name": "expect.toBeVisible",
+      "stop": 1735833876892
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833876895,
+      "name": "expect.toBeVisible",
+      "stop": 1735833876900
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833876902,
+      "name": "expect.toBeVisible",
+      "stop": 1735833876907
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1735833876912,
+              "name": "page.close",
+              "stop": 1735833876917
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1735833876909,
+          "name": "afterEach hook",
+          "stop": 1735833876917
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1735833876918,
+          "name": "fixture: page",
+          "stop": 1735833876907
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1735833876918,
+          "name": "fixture: context",
+          "stop": 1735833876919
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833876908,
+      "name": "After Hooks",
+      "stop": 1735833876964
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "d3f48e8c-27aa-4520-86c9-178ef085fe15-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "E2E Products flows.products.spec.ts" },
+    {
+      "name": "titlePath",
+      "value": " > chromium > E2E Products flows\\products.spec.ts > Products test cases"
+    },
+    { "name": "tag", "value": "FullJourney" },
+    { "name": "host", "value": "BolBol" },
+    { "name": "thread", "value": "pid-11292-worker-0" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "suite", "value": "E2E Products flows\\products.spec.ts" },
+    { "name": "subSuite", "value": "Products test cases" }
+  ],
+  "links": [],
+  "start": 1735833871083,
+  "testCaseId": "76b33f02fe3cec834a0a8bbf0b40c7c7",
+  "fullName": "E2E Products flows/products.spec.ts:25:7",
+  "stop": 1735833876944
+}

@@ -1,0 +1,343 @@
+{
+  "uuid": "37b0ef04-5bb8-4751-a47d-17783393d003",
+  "name": "Login User with correct email and password",
+  "historyId": "2fad3f60217dbedeb4d58b0a3dfc831c:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "start": 1735833727212,
+                  "name": "browserType.launch",
+                  "stop": 1735833727417
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "start": 1735833727208,
+              "name": "fixture: browser",
+              "stop": 1735833727417
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "start": 1735833727423,
+                  "name": "browser.newContext",
+                  "stop": 1735833727437
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "start": 1735833727419,
+              "name": "fixture: context",
+              "stop": 1735833727440
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "start": 1735833727446,
+                  "name": "browserContext.newPage",
+                  "stop": 1735833727651
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "start": 1735833727442,
+              "name": "fixture: page",
+              "stop": 1735833727651
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1735833727662,
+              "name": "page.route",
+              "stop": 1735833727669
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1735833727674,
+              "name": "page.goto(/)",
+              "stop": 1735833737183
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1735833737187,
+              "name": "expect.toBeVisible",
+              "stop": 1735833737225
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1735833727194,
+          "name": "beforeEach hook",
+          "stop": 1735833737225
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833727192,
+      "name": "Before Hooks",
+      "stop": 1735833737226
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833737228,
+      "name": "locator.getByText(' Signup / Login').click",
+      "stop": 1735833738006
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833738016,
+      "name": "expect.toBeVisible",
+      "stop": 1735833738055
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833738057,
+      "name": "expect.toBeVisible",
+      "stop": 1735833738065
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833738067,
+      "name": "expect.toHaveText",
+      "stop": 1735833738072
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833738074,
+      "name": "expect.toHaveText",
+      "stop": 1735833738079
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833738081,
+      "name": "locator.getByPlaceholder('Email Address').first().fill",
+      "stop": 1735833738096
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833738099,
+      "name": "locator.getByPlaceholder('Password').fill",
+      "stop": 1735833738146
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833738149,
+      "name": "expect.toHaveValue",
+      "stop": 1735833738160
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833738163,
+      "name": "expect.toHaveValue",
+      "stop": 1735833738170
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833738172,
+      "name": "locator.click([data-qa='login-button'])",
+      "stop": 1735833738914
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833738916,
+      "name": "expect.toBeVisible",
+      "stop": 1735833739009
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1735833739016,
+              "name": "page.close",
+              "stop": 1735833739032
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1735833739012,
+          "name": "afterEach hook",
+          "stop": 1735833739032
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1735833739035,
+          "name": "fixture: page",
+          "stop": 1735833739036
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1735833739036,
+          "name": "fixture: context",
+          "stop": 1735833739037
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1735833739010,
+      "name": "After Hooks",
+      "stop": 1735833739147
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "d5f213c2-fe21-4821-9183-a8e6e34e6674-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "Authentication.login.spec.ts" },
+    {
+      "name": "titlePath",
+      "value": " > chromium > Authentication\\login.spec.ts > Login Test Cases"
+    },
+    { "name": "tag", "value": "Regression" },
+    { "name": "tag", "value": "Auth" },
+    { "name": "host", "value": "BolBol" },
+    { "name": "thread", "value": "pid-13988-worker-0" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "suite", "value": "Authentication\\login.spec.ts" },
+    { "name": "subSuite", "value": "Login Test Cases" }
+  ],
+  "links": [],
+  "start": 1735833727187,
+  "testCaseId": "2fad3f60217dbedeb4d58b0a3dfc831c",
+  "fullName": "Authentication/login.spec.ts:22:7",
+  "stop": 1735833738915
+}
